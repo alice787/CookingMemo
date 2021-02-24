@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tableViewCell" rowHeight="280" id="tWj-Zr-KvJ" customClass="CookingGenreListCell" customModule="CookingMemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="959" height="280"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tWj-Zr-KvJ" id="u8q-dV-16n">
+                <rect key="frame" x="0.0" y="0.0" width="959" height="280"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="8F8-GL-RWr">
+                        <rect key="frame" x="5" y="5" width="270" height="270"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="8F8-GL-RWr" secondAttribute="height" multiplier="1:1" id="Zx3-Vp-sdl"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genre Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gEY-r0-YJ6">
+                        <rect key="frame" x="290" y="129.5" width="664" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="gEY-r0-YJ6" secondAttribute="trailing" constant="5" id="6Wz-dh-2Sn"/>
+                    <constraint firstItem="gEY-r0-YJ6" firstAttribute="centerY" secondItem="u8q-dV-16n" secondAttribute="centerY" id="HlO-Y0-tS6"/>
+                    <constraint firstItem="gEY-r0-YJ6" firstAttribute="leading" secondItem="8F8-GL-RWr" secondAttribute="trailing" constant="15" id="MxW-65-zhZ"/>
+                    <constraint firstAttribute="bottom" secondItem="8F8-GL-RWr" secondAttribute="bottom" constant="5" id="NYt-Hw-n9B"/>
+                    <constraint firstItem="8F8-GL-RWr" firstAttribute="leading" secondItem="u8q-dV-16n" secondAttribute="leading" constant="5" id="SpE-Rt-Btb"/>
+                    <constraint firstItem="8F8-GL-RWr" firstAttribute="top" secondItem="u8q-dV-16n" secondAttribute="top" constant="5" id="iKs-Zd-VBA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="genreImage" destination="8F8-GL-RWr" id="rP3-ZV-LVj"/>
+                <outlet property="genreTitle" destination="gEY-r0-YJ6" id="KUj-Sl-0CC"/>
+            </connections>
+            <point key="canvasLocation" x="210.86956521739131" y="64.955357142857139"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="0" width="600" height="450"/>
+    </resources>
+</document>
